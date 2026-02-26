@@ -19,8 +19,8 @@ class DefaultFirebaseOptions {
         return android;
       case TargetPlatform.iOS:
         return ios;
-      case TargetPlatform.macOS:
-        return macos;
+      // case TargetPlatform.macOS:
+      //   return macos;
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -33,36 +33,36 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'YOUR_WEB_API_KEY',
-    appId: 'YOUR_WEB_APP_ID',
+    appId: '1:570417219974:web:e8aa5b0be25adb706ec407',
     messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
+    projectId: 'chat-e171f',
+    authDomain: 'chat-e171f.firebaseapp.com',
+    storageBucket: 'chat-e171f.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'YOUR_ANDROID_API_KEY',
-    appId: 'YOUR_ANDROID_APP_ID',
+    appId: '1:570417219974:android:4d46e7a90b59303c6ec407',
     messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
+    projectId: 'chat-e171f',
+    storageBucket: 'chat-e171f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'YOUR_IOS_API_KEY',
-    appId: 'YOUR_IOS_APP_ID',
+    appId: '1:570417219974:ios:e2be58eb0c7dc7bd6ec407',
     messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
+    projectId: 'chat-e171f',
+    storageBucket: 'chat-e171f.appspot.com',
     iosBundleId: 'com.example.secureChat',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'YOUR_MACOS_API_KEY',
-    appId: 'YOUR_MACOS_APP_ID',
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
-    iosBundleId: 'com.example.secureChat',
-  );
+  // static const FirebaseOptions macos = FirebaseOptions(
+  //   apiKey: 'YOUR_MACOS_API_KEY',
+  //   appId: 'YOUR_MACOS_APP_ID',
+  //   messagingSenderId: 'YOUR_SENDER_ID',
+  //   projectId: 'chat-e171f',
+  //   storageBucket: 'chat-e171f.appspot.com',
+  //   iosBundleId: 'com.example.secureChat',
+  // );
 }

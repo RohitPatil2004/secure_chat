@@ -1,15 +1,14 @@
 name: secure_chat
-description: "End To End Encrypted Chat App"
+description: End-to-end encrypted chat application using Flutter and Firebase
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.11.0
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
 
   # Firebase
   firebase_core: ^2.24.2
@@ -18,9 +17,8 @@ dependencies:
   firebase_storage: ^11.6.0
 
   # E2E Encryption
-  encrypt: ^5.0.3
   pointycastle: ^3.7.4
-  cryptography: ^2.9.0
+  encrypt: ^5.0.3
 
   # UI & State
   provider: ^6.1.1
@@ -39,7 +37,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
